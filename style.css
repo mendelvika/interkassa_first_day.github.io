@@ -585,6 +585,7 @@ body {
     }
     .fomitskiy {
         background-position-x: center;
+        background-image: url(photo/fomitskiy1.jpg);
     }
     .yakovenko {
         background-position-y: -40px;
