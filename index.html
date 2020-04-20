@@ -6,245 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
-    <style>
-         ::-webkit-scrollbar {
-            width: 1px;
-            height: 1px;
-        }
-        
-         ::-webkit-scrollbar-button {
-            width: 1px;
-            height: 1px;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: 'Open Sans';
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-            overflow: hidden;
-        }
-        
-        .bg {
-            background-image: url(bg1.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            top: 0px;
-            left: 0px;
-            bottom: 0px;
-            right: 0px;
-        }
-        
-        .photo {
-            background-position: center;
-            background-size: cover;
-        }
-        
-        .fisun {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/950f0a39-08e9-4dae-af40-a0ee9226ee00.jpg);
-        }
-        
-        .zotko {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/75582193-74c6-4caa-b692-fb74c034a058.jpg);
-            background-position-y: -20px;
-        }
-        
-        .fomitskiy {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/dc7290ef-2b63-4458-8edf-58dca092d02c.jpg);
-        }
-        
-        .pavlovskiy {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/b634e426-19a2-45a4-93c5-3f72c9a66e7c.jpg);
-        }
-        
-        .marinenko {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/00a39fd3-ef7c-4215-ae2c-7995d0194666.jpg);
-        }
-        
-        .galitska {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/d3b074ad-a646-4dfb-8ecb-ed987ab1cfb0.jpg);
-            background-size: 1200px;
-            background-position-x: -250px;
-            background-position-y: -220px;
-        }
-        
-        .glotova {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/9739aad5-62cd-4c2e-9cdd-4f09b26a437a.jpg);
-        }
-        
-        .lahmanyuk {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/5860dce7-53a3-4b8b-8f7b-47f0dce6d5bb.jpg);
-            background-position-x: -70px;
-        }
-        
-        .klimenko {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/c19fca3c-3888-4dd4-bf07-cc268c8ba429.jpg);
-        }
-        
-        .trofimenko {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/c7515ee7-eee1-489f-b12a-cd909c9efbcd.jpg);
-            background-position-y: -50px;
-        }
-        
-        .kolesnik {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/3561012c-3cd1-4cfc-9a9a-1a1656fb0407.jpg);
-        }
-        
-        .yakovenko {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/fb721463-af2e-4e50-91b7-e78c8bec20a0.jpg);
-        }
-        
-        .prashur {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/8a6db498-3030-4763-8fdb-5104590b99b9.jpg);
-        }
-        
-        .kalinichenko {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/4d2affdb-6ec9-4831-bda0-04af7a31599b.jpg);
-        }
-        
-        .sidorenko {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/f492327f-62a5-43c1-b6c0-701a50956269.jpg);
-        }
-        
-        .los {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/225275cc-f189-47b3-9a13-75392ced1a7f.jpg);
-        }
-        
-        .arhipov {
-            background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/2c8b8214-32c6-4b1d-be5c-866bb610d6a5.jpg);
-        }
-        
-        .photo {
-            height: 500px;
-            width: 50%;
-            box-shadow: -20px 20px 0px rgba(11, 165, 11, 0.822), -40px 40px 0px rgba(86, 199, 86, 0.822);
-        }
-        
-        .text {
-            width: 50%;
-            position: relative;
-            padding: 20px;
-            font-family: 'Raleway', sans-serif;
-            color: rgb(48, 48, 48);
-        }
-        
-        .photo-title {
-            position: relative;
-            letter-spacing: 1px;
-            /* transform: translateX(-40px); */
-        }
-        
-        .photo-title p:first-of-type {
-            font-size: 40px;
-            margin-block-start: 1em;
-            margin-block-end: 0.1em;
-            font-weight: bold;
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-color: black;
-            -webkit-text-stroke-width: 2px;
-        }
-        
-        .photo-title p:last-of-type {
-            font-size: 22px;
-            font-weight: bold;
-            color: green;
-            margin-block-start: 0.3em;
-            margin-block-end: 0.1em;
-        }
-        
-        .story {
-            margin-top: 50px;
-        }
-        
-        .story p {
-            line-height: 26px;
-            height: 100%;
-            max-height: 300px;
-            overflow: scroll;
-            font-size: 18px;
-            font-weight: 400;
-            color: rgb(51, 51, 51);
-        }
-        
-        .container1 .card {
-            width: 100vw;
-            height: 100vh;
-            /* display: inline-block; */
-            position: relative;
-        }
-        
-        .container1 .card .card-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -250px 0 0 -450px;
-            box-sizing: border-box;
-            display: block;
-            background: rgba(255, 255, 255, 0.651);
-            width: 900px;
-            height: 500px;
-            display: flex;
-        }
-        
-        .preview-text {
-            position: absolute;
-            background-image: url(preview-text.svg);
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            bottom: 0%;
-            left: 0%;
-            width: 100vh;
-            height: 200px;
-            color: #00c500e8;
-            transform: rotate(-90deg);
-            transform-origin: top left;
-            color: #00c500e8;
-            transform: rotate(-90deg);
-        }
-        
-        .container1 {
-            overflow-y: scroll;
-            overflow-x: hidden;
-            transform: rotate(270deg) translateX(-100%);
-            transform-origin: top left;
-            position: absolute;
-            width: 100vh;
-            height: 100vw;
-            display: flex;
-            font-family: 'Open Sans';
-            animation-name: preview;
-            animation-duration: 2s;
-            animation-timing-function: ease;
-            animation-delay: 0s;
-        }
-        
-        .container2 {
-            transform: rotate(90deg) translateY(-100vh);
-            transform-origin: top left;
-            font-size: 0;
-            display: flex;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="cursor"></div>
     <div class="bg"></div>
-    <div class="preview-text">
-    </div>
     <div class="container1">
         <div class="container2">
 
-
+            <div class="card">
+                <div class="preview-text">
+                    <!-- <p>перший день в</p> -->
+                    <div>
+                        <p>interkassa</p>
+                        <p>payment processing system</p>
+                    </div>
+                    <div>
+                        <p>11</p>
+                        <p>років</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="hello-text">
+                    <p> Привіт, друзі! </p>
+                    <p>Починаємо тиждень з особливих новин. Цієї неділі, 19 квітня, наша компанія стала на рік старше. </p>
+                    <p>Звісно, трішки не так ми планували собі це свято, але <span>shit</span> форс-мажори трапляються. І хоч обставини вносять свої корективи, ніщо не завадить нам зробити головне — подякувати. Давайте подякуємо один одному за рік злагодженої
+                        роботи, за довіру і підтримку, за шалений командний дух та сміливість приймати зміни. </p>
+                    <p>За 11 років в історії Interkassa було чимало важливих моментів. Та ми вирішили зупинитися на одному конкретному — моменті, коли до команди Interkassa приєдналися ви. </p>
+                    <p>Пам'ятаєте, яким був ваш перший день в компанії? Своїми спогадами вже стигли поділитися деякі наші колеги, тож читайте та розповідайте про початок своєї історії. </p>
+                </div>
+            </div>
             <div class="card">
                 <div class="card-content">
                     <div class="photo fisun"></div>
@@ -255,7 +50,8 @@
                         </div>
                         <div class="story">
                             <p>Напевно, не всі знають, але в Interkassa я прийшов з WebMoney. Все почалося з офісу на 12 кв. м, без вікон та з трьома столами. Ми були і техпідтримка, і бухгалтерія, і офіс продажів. <br> Зараз Interkassa вже 11 років, і кожному
-                                з вас я хочу побажати лише одного: щоб ви кожного ранку з великим бажанням йшли на роботу і щодня поверталися додому з відчуттям задоволення від проведеного дня в компанії :) Це запорука нашого спільного успіху :)</p>
+                                з вас я хочу побажати лише одного: щоб ви кожного ранку з великим бажанням йшли на роботу і щодня поверталися додому з відчуттям задоволення від проведеного дня в компанії :) Це запорука нашого спільного успіху :)
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -546,6 +342,20 @@
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-content send-story-block">
+                    <div class="send-story-text">
+                        <p>Сподобалися історії? Тепер ваша черга. </p>
+                        <p>Розповідайте про свій перший день в Interkassa, і, можливо, саме ви отримаєте крутий приз — електросамокат. </p>
+                    </div>
+                    <div class="send-story-button">
+                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfxigJvRXjsXWMlYMU1FII58pR7WZwR7Xtg5u17BYJgXZzB3A/viewform">
+                            <p>Розповісти</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
             <!-- 
         <div class="preview-text">
             <p>перший день в </p>
@@ -555,6 +365,21 @@
 
         </div>
     </div>
+    <script>
+        document.getElementsByTagName('body')[0].addEventListener('mousemove', (e) => {
+            let cursor = document.querySelector('.cursor');
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        })
+        let body = document.querySelector("body");
+
+        function animate() {
+            body.className += " animate";
+        }
+        window.onload = function() {
+            animate();
+        };
+    </script>
 </body>
 
 </html>
