@@ -1,602 +1,602 @@
-                                       ::-webkit-scrollbar {
-                                          width: 1px;
-                                          height: 1px;
-                                      }
-                                      
-                                       ::-webkit-scrollbar-button {
-                                          width: 1px;
-                                          height: 1px;
-                                      }
-                                      
-                                      html {
-                                          scroll-behavior: smooth;
-                                      }
-                                      
-                                      body {
-                                          font-family: 'Montserrat', sans-serif;
-                                          padding: 0px;
-                                          margin: 0px;
-                                          box-sizing: border-box;
-                                          /* overflow: hidden;
+                                        ::-webkit-scrollbar {
+                                           width: 1px;
+                                           height: 1px;
+                                       }
+                                       
+                                        ::-webkit-scrollbar-button {
+                                           width: 1px;
+                                           height: 1px;
+                                       }
+                                       
+                                       html {
+                                           scroll-behavior: smooth;
+                                       }
+                                       
+                                       body {
+                                           font-family: 'Montserrat', sans-serif;
+                                           padding: 0px;
+                                           margin: 0px;
+                                           box-sizing: border-box;
+                                           /* overflow: hidden;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear; */
-                                          cursor: default;
-                                      }
-                                      
-                                      .cursor {
-                                          position: fixed;
-                                          border-radius: 50%;
-                                          transform: translateX(-50%) translateY(-50%);
-                                          pointer-events: none;
-                                          left: -100px;
-                                          top: 50%;
-                                          background-color: transparent;
-                                          height: 30px;
-                                          width: 30px;
-                                          z-index: 99998;
-                                          border: 2px solid rgb(58, 206, 78);
-                                          box-shadow: 0 0 22px rgba(35, 145, 45, 0.493);
-                                      }
-                                      
-                                      .bg {
-                                          background-image: url(bg1.svg);
-                                          background-size: cover;
-                                          background-repeat: no-repeat;
-                                          background-position: center;
-                                          position: fixed;
-                                          width: 100vw;
-                                          height: 100vh;
-                                          top: 0px;
-                                          left: 0px;
-                                          bottom: 0px;
-                                          right: 0px;
-                                      }
-                                      
-                                      .photo {
-                                          background-position: center;
-                                          background-size: cover;
-                                      }
-                                      
-                                      .fisun {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/950f0a39-08e9-4dae-af40-a0ee9226ee00.jpg);
-                                      }
-                                      
-                                      .zotko {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/75582193-74c6-4caa-b692-fb74c034a058.jpg);
-                                          background-position-y: -20px;
-                                      }
-                                      
-                                      .fomitskiy {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/dc7290ef-2b63-4458-8edf-58dca092d02c.jpg);
-                                          background-position-x: center;
-                                      }
-                                      
-                                      .pavlovskiy {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/b634e426-19a2-45a4-93c5-3f72c9a66e7c.jpg);
-                                      }
-                                      
-                                      .marinenko {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/00a39fd3-ef7c-4215-ae2c-7995d0194666.jpg);
-                                      }
-                                      
-                                      .galitska {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/d3b074ad-a646-4dfb-8ecb-ed987ab1cfb0.jpg);
-                                          background-size: 1200px;
-                                          background-position-x: -250px;
-                                          background-position-y: -220px;
-                                      }
-                                      
-                                      .glotova {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/9739aad5-62cd-4c2e-9cdd-4f09b26a437a.jpg);
-                                      }
-                                      
-                                      .lahmanyuk {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/5860dce7-53a3-4b8b-8f7b-47f0dce6d5bb.jpg);
-                                          background-position-x: -70px;
-                                      }
-                                      
-                                      .klimenko {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/c19fca3c-3888-4dd4-bf07-cc268c8ba429.jpg);
-                                      }
-                                      
-                                      .trofimenko {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/c7515ee7-eee1-489f-b12a-cd909c9efbcd.jpg);
-                                          background-position-y: -50px;
-                                      }
-                                      
-                                      .kolesnik {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/3561012c-3cd1-4cfc-9a9a-1a1656fb0407.jpg);
-                                      }
-                                      
-                                      .yakovenko {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/fb721463-af2e-4e50-91b7-e78c8bec20a0.jpg);
-                                      }
-                                      
-                                      .prashur {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/8a6db498-3030-4763-8fdb-5104590b99b9.jpg);
-                                      }
-                                      
-                                      .kalinichenko {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/4d2affdb-6ec9-4831-bda0-04af7a31599b.jpg);
-                                      }
-                                      
-                                      .sidorenko {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/f492327f-62a5-43c1-b6c0-701a50956269.jpg);
-                                      }
-                                      
-                                      .los {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/225275cc-f189-47b3-9a13-75392ced1a7f.jpg);
-                                      }
-                                      
-                                      .arhipov {
-                                          background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/2c8b8214-32c6-4b1d-be5c-866bb610d6a5.jpg);
-                                      }
-                                      
-                                      .photo {
-                                          height: 500px;
-                                          width: 50%;
-                                          position: relative;
-                                          /* box-shadow: -20px 20px 0px rgba(11, 165, 11, 0.822), -40px 40px 0px rgba(86, 199, 86, 0.822); */
-                                      }
-                                      
-                                      .photo:before {
-                                          content: '';
-                                          height: 500px;
-                                          width: 100%;
-                                          position: absolute;
-                                          top: 10px;
-                                          right: 10px;
-                                          border: 3px solid rgba(86, 199, 86, 0.822);
-                                          z-index: -1;
-                                      }
-                                      
-                                      .text {
-                                          width: 50%;
-                                          position: relative;
-                                          padding: 20px;
-                                          font-family: 'Montserrat', sans-serif;
-                                          color: rgb(48, 48, 48);
-                                      }
-                                      
-                                      .photo-title {
-                                          position: relative;
-                                          letter-spacing: 1px;
-                                          /* transform: translateX(-40px); */
-                                      }
-                                      
-                                      .photo-title p:first-of-type {
-                                          font-size: 32px;
-                                          margin-block-start: 0.3em;
-                                          margin-block-end: 0.1em;
-                                          font-weight: bold;
-                                          -webkit-text-fill-color: transparent;
-                                          -webkit-text-stroke-color: rgb(61, 61, 61);
-                                          -webkit-text-stroke-width: 2px;
-                                      }
-                                      
-                                      .photo-title p:last-of-type {
-                                          font-size: 22px;
-                                          font-weight: bold;
-                                          color: #2cac28;
-                                          margin-block-start: 0.3em;
-                                          margin-block-end: 0.1em;
-                                      }
-                                      
-                                      .story {
-                                          margin-top: 30px;
-                                      }
-                                      
-                                      .story p {
-                                          line-height: 24px;
-                                          height: 100%;
-                                          max-height: 325px;
-                                          overflow: scroll;
-                                          font-size: 16px;
-                                          font-weight: 400;
-                                          color: rgb(51, 51, 51);
-                                      }
-                                      
-                                      .container1 .card {
-                                          width: 100vw;
-                                          height: 100vh;
-                                          /* display: inline-block; */
-                                          position: relative;
-                                      }
-                                      
-                                      .container1 .card .card-content {
-                                          position: absolute;
-                                          top: 50%;
-                                          left: 50%;
-                                          margin: -250px 0 0 -450px;
-                                          box-sizing: border-box;
-                                          display: block;
-                                          background: rgba(255, 255, 255, 0.651);
-                                          width: 900px;
-                                          height: 500px;
-                                          display: flex;
-                                      }
-                                      
-                                      .preview-text {
-                                          position: absolute;
-                                          top: 50%;
-                                          left: 50%;
-                                          margin: -170px 0 0 -440px;
-                                          /* -webkit-transition: all 1s ease-in-out;
+                                           cursor: default;
+                                       }
+                                       
+                                       .cursor {
+                                           position: fixed;
+                                           border-radius: 50%;
+                                           transform: translateX(-50%) translateY(-50%);
+                                           pointer-events: none;
+                                           left: -100px;
+                                           top: 50%;
+                                           background-color: transparent;
+                                           height: 30px;
+                                           width: 30px;
+                                           z-index: 99998;
+                                           border: 2px solid rgb(58, 206, 78);
+                                           box-shadow: 0 0 22px rgba(35, 145, 45, 0.493);
+                                       }
+                                       
+                                       .bg {
+                                           background-image: url(bg1.svg);
+                                           background-size: cover;
+                                           background-repeat: no-repeat;
+                                           background-position: center;
+                                           position: fixed;
+                                           width: 100vw;
+                                           height: 100vh;
+                                           top: 0px;
+                                           left: 0px;
+                                           bottom: 0px;
+                                           right: 0px;
+                                       }
+                                       
+                                       .photo {
+                                           background-position: center;
+                                           background-size: cover;
+                                       }
+                                       
+                                       .fisun {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/950f0a39-08e9-4dae-af40-a0ee9226ee00.jpg);
+                                       }
+                                       
+                                       .zotko {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/75582193-74c6-4caa-b692-fb74c034a058.jpg);
+                                           background-position-y: -20px;
+                                       }
+                                       
+                                       .fomitskiy {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/dc7290ef-2b63-4458-8edf-58dca092d02c.jpg);
+                                           background-position-x: center;
+                                       }
+                                       
+                                       .pavlovskiy {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/b634e426-19a2-45a4-93c5-3f72c9a66e7c.jpg);
+                                       }
+                                       
+                                       .marinenko {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/00a39fd3-ef7c-4215-ae2c-7995d0194666.jpg);
+                                       }
+                                       
+                                       .galitska {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/d3b074ad-a646-4dfb-8ecb-ed987ab1cfb0.jpg);
+                                           background-size: 1200px;
+                                           background-position-x: -250px;
+                                           background-position-y: -220px;
+                                       }
+                                       
+                                       .glotova {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/9739aad5-62cd-4c2e-9cdd-4f09b26a437a.jpg);
+                                       }
+                                       
+                                       .lahmanyuk {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/5860dce7-53a3-4b8b-8f7b-47f0dce6d5bb.jpg);
+                                           background-position-x: -70px;
+                                       }
+                                       
+                                       .klimenko {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/c19fca3c-3888-4dd4-bf07-cc268c8ba429.jpg);
+                                       }
+                                       
+                                       .trofimenko {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/c7515ee7-eee1-489f-b12a-cd909c9efbcd.jpg);
+                                           background-position-y: -50px;
+                                       }
+                                       
+                                       .kolesnik {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/3561012c-3cd1-4cfc-9a9a-1a1656fb0407.jpg);
+                                       }
+                                       
+                                       .yakovenko {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/fb721463-af2e-4e50-91b7-e78c8bec20a0.jpg);
+                                       }
+                                       
+                                       .prashur {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/8a6db498-3030-4763-8fdb-5104590b99b9.jpg);
+                                       }
+                                       
+                                       .kalinichenko {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/4d2affdb-6ec9-4831-bda0-04af7a31599b.jpg);
+                                       }
+                                       
+                                       .sidorenko {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/f492327f-62a5-43c1-b6c0-701a50956269.jpg);
+                                       }
+                                       
+                                       .los {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/225275cc-f189-47b3-9a13-75392ced1a7f.jpg);
+                                       }
+                                       
+                                       .arhipov {
+                                           background-image: url(https://mcusercontent.com/8b3abe4cd127e47fea0155d82/images/2c8b8214-32c6-4b1d-be5c-866bb610d6a5.jpg);
+                                       }
+                                       
+                                       .photo {
+                                           height: 500px;
+                                           width: 50%;
+                                           position: relative;
+                                           /* box-shadow: -20px 20px 0px rgba(11, 165, 11, 0.822), -40px 40px 0px rgba(86, 199, 86, 0.822); */
+                                       }
+                                       
+                                       .photo:before {
+                                           content: '';
+                                           height: 500px;
+                                           width: 100%;
+                                           position: absolute;
+                                           top: 10px;
+                                           right: 10px;
+                                           border: 3px solid rgba(86, 199, 86, 0.822);
+                                           z-index: -1;
+                                       }
+                                       
+                                       .text {
+                                           width: 50%;
+                                           position: relative;
+                                           padding: 20px;
+                                           font-family: 'Montserrat', sans-serif;
+                                           color: rgb(48, 48, 48);
+                                       }
+                                       
+                                       .photo-title {
+                                           position: relative;
+                                           letter-spacing: 1px;
+                                           /* transform: translateX(-40px); */
+                                       }
+                                       
+                                       .photo-title p:first-of-type {
+                                           font-size: 32px;
+                                           margin-block-start: 0.3em;
+                                           margin-block-end: 0.1em;
+                                           font-weight: bold;
+                                           -webkit-text-fill-color: transparent;
+                                           -webkit-text-stroke-color: rgb(61, 61, 61);
+                                           -webkit-text-stroke-width: 2px;
+                                       }
+                                       
+                                       .photo-title p:last-of-type {
+                                           font-size: 22px;
+                                           font-weight: bold;
+                                           color: #2cac28;
+                                           margin-block-start: 0.3em;
+                                           margin-block-end: 0.1em;
+                                       }
+                                       
+                                       .story {
+                                           margin-top: 30px;
+                                       }
+                                       
+                                       .story p {
+                                           line-height: 24px;
+                                           height: 100%;
+                                           max-height: 325px;
+                                           overflow: scroll;
+                                           font-size: 16px;
+                                           font-weight: 400;
+                                           color: rgb(51, 51, 51);
+                                       }
+                                       
+                                       .container1 .card {
+                                           width: 100vw;
+                                           height: 100vh;
+                                           /* display: inline-block; */
+                                           position: relative;
+                                       }
+                                       
+                                       .container1 .card .card-content {
+                                           position: absolute;
+                                           top: 50%;
+                                           left: 50%;
+                                           margin: -250px 0 0 -450px;
+                                           box-sizing: border-box;
+                                           display: block;
+                                           background: rgba(255, 255, 255, 0.651);
+                                           width: 900px;
+                                           height: 500px;
+                                           display: flex;
+                                       }
+                                       
+                                       .preview-text {
+                                           position: absolute;
+                                           top: 50%;
+                                           left: 50%;
+                                           margin: -170px 0 0 -440px;
+                                           /* -webkit-transition: all 1s ease-in-out;
                         transition: all 2s cubic-bezier(.190, 1.000, .220, 1.000) 0s;
                         -webkit-transform: translateX(100%);
                         -ms-transform: translateX(100%);
                         transform: translateX(100%); */
-                                          text-align: center;
-                                      }
-                                      /*                     
+                                           text-align: center;
+                                       }
+                                       /*                     
                     .animate .preview-text {
                         -webkit-transform: translateX(0);
                         -ms-transform: translateX(0);
                         transform: translateX(0);
                     } */
-                                      
-                                      .preview-text div:first-of-type p:first-of-type {
-                                          font-size: 10rem;
-                                          font-weight: bold;
-                                          line-height: 10.5rem;
-                                          -webkit-text-fill-color: transparent;
-                                          -webkit-text-stroke-color: #00c500e8;
-                                          -webkit-text-stroke-width: 3px;
-                                          margin-block-start: 0em;
-                                          margin-block-end: 0em;
-                                          text-shadow: 5px 5px 0px #36c92e9c;
-                                          transition: all 0.2s ease;
-                                      }
-                                      
-                                      .preview-text div:first-of-type p:last-of-type {
-                                          font-size: 3.7rem;
-                                          font-weight: bold;
-                                          line-height: 3rem;
-                                          margin-block-start: 0em;
-                                          margin-block-end: 0em;
-                                          color: #00c500e8;
-                                          transition: all 0.2s ease;
-                                      }
-                                      
-                                      .preview-text div:last-of-type p:first-of-type {
-                                          font-size: 7em;
-                                          line-height: 1em;
-                                          font-weight: bold;
-                                          margin-block-start: 0.2em;
-                                          margin-block-end: 0em;
-                                          -webkit-text-fill-color: transparent;
-                                          -webkit-text-stroke-color: #00c500e8;
-                                          -webkit-text-stroke-width: 4px;
-                                      }
-                                      
-                                      .preview-text div:last-of-type p:last-of-type {
-                                          font-size: 2em;
-                                          line-height: 1em;
-                                          margin-block-start: 0em;
-                                          margin-block-end: 0em;
-                                          font-weight: bold;
-                                          color: #00c500e8;
-                                      }
-                                      
-                                      .card {
-                                          display: flex;
-                                          justify-content: center;
-                                          align-items: center;
-                                      }
-                                      
-                                      .hello-text {
-                                          width: 70%;
-                                          height: fit-content;
-                                          font-size: 18px;
-                                          padding: 20px;
-                                          background-color: rgba(255, 255, 255, 0.486);
-                                      }
-                                      
-                                      .hello-text span {
-                                          text-decoration: line-through;
-                                      }
-                                      
-                                      .hello-text p:first-child {
-                                          font-size: 28px;
-                                          font-weight: bold;
-                                          /* color: #00c500e8; */
-                                          -webkit-text-fill-color: transparent;
-                                          -webkit-text-stroke-color: #00bf00;
-                                          -webkit-text-stroke-width: 1px;
-                                      }
-                                      
-                                      .send-story-block {
-                                          display: flex;
-                                          align-items: center;
-                                          justify-content: space-around;
-                                          padding: 0px 50px;
-                                      }
-                                      
-                                      .send-story-block div:first-of-type {
-                                          width: 50%;
-                                      }
-                                      
-                                      .send-story-button {
-                                          border: 2px solid #00bf00;
-                                          background-color: transparent;
-                                          box-shadow: 10px 10px 0px #00bf00b2;
-                                          min-width: 240px;
-                                          height: 80px;
-                                          border-radius: 30px;
-                                          box-sizing: border-box;
-                                      }
-                                      
-                                      .send-story-button a {
-                                          width: 100%;
-                                          height: 100%;
-                                          display: flex;
-                                          align-items: center;
-                                          justify-content: center;
-                                          text-decoration: none;
-                                      }
-                                      
-                                      .send-story-button p {
-                                          text-decoration: none;
-                                          font-weight: bold;
-                                          color: #00bf00;
-                                          font-size: 20px;
-                                      }
-                                      
-                                      .send-story-button:hover {
-                                          background-color: #00bf0027;
-                                      }
-                                      
-                                      .send-story-text p:first-of-type {
-                                          font-weight: 600;
-                                          font-size: 18px;
-                                      }
-                                      
-                                      .container1 {
-                                          overflow-y: scroll;
-                                          overflow-x: hidden;
-                                          transform: rotate(270deg) translateX(-100%);
-                                          transform-origin: top left;
-                                          position: absolute;
-                                          width: 100vh;
-                                          height: 100vw;
-                                          display: flex;
-                                          font-family: 'Montserrat', sans-serif;
-                                          animation-name: preview;
-                                          animation-duration: 2s;
-                                          animation-timing-function: ease;
-                                          animation-delay: 0s;
-                                      }
-                                      
-                                      .container2 {
-                                          transform: rotate(90deg) translateY(-100vh);
-                                          transform-origin: top left;
-                                          /* font-size: 0; */
-                                          display: flex;
-                                      }
-                                      
-                                      @media screen and (max-width:1000px) {
-                                          body {
-                                              overflow-y: auto;
-                                              overflow-x: hidden;
-                                          }
-                                          .cursor {
-                                              display: none;
-                                          }
-                                          .container1 {
-                                              overflow-y: auto;
-                                              overflow-x: hidden;
-                                              transform: rotate(0deg) translateX(0%);
-                                              width: 100vw;
-                                              height: auto;
-                                          }
-                                          .container2 {
-                                              transform: rotate(0deg) translateY(0vh);
-                                              flex-wrap: wrap;
-                                          }
-                                          .hello-text {
-                                              width: 90%;
-                                          }
-                                          .preview-text {
-                                              margin: -140px 0 0 -320px;
-                                          }
-                                          .preview-text div:first-of-type p:first-of-type {
-                                              font-size: 7rem;
-                                              line-height: 7rem;
-                                          }
-                                          .preview-text div:first-of-type p:last-of-type {
-                                              font-size: 2.6rem;
-                                              line-height: 2rem;
-                                          }
-                                          .preview-text div:last-of-type p:first-of-type {
-                                              font-size: 5em;
-                                              line-height: 1em;
-                                          }
-                                          .preview-text div:last-of-type p:last-of-type {
-                                              font-size: 1.3em;
-                                              line-height: 0.1em;
-                                          }
-                                          .container1 .card {
-                                              display: flex;
-                                              justify-content: center;
-                                              align-items: center;
-                                          }
-                                          .container1 .card .card-content {
-                                              position: static;
-                                              margin: 0;
-                                              width: 90%;
-                                          }
-                                          .photo {
-                                              background-repeat: no-repeat;
-                                          }
-                                          .zotko {
-                                              background-position-y: 0px;
-                                          }
-                                          .trofimenko {
-                                              background-position-y: 0px;
-                                          }
-                                          .text .photo-title p:first-of-type {
-                                              font-size: 30px;
-                                          }
-                                          .text .photo-title p:last-of-type {
-                                              font-size: 20px;
-                                          }
-                                          .story {
-                                              margin-top: 20px;
-                                          }
-                                          .story p {
-                                              font-size: 14px;
-                                              line-height: 20px;
-                                          }
-                                      }
-                                      
-                                      @media screen and (max-width:700px) {
-                                          .preview-text {
-                                              margin: 0px;
-                                              position: static;
-                                          }
-                                          .preview-text div:first-of-type p:first-of-type {
-                                              font-size: 4rem;
-                                              line-height: 4rem;
-                                              text-shadow: 3px 3px 0px #36c92e9c;
-                                          }
-                                          .preview-text div:first-of-type p:last-of-type {
-                                              font-size: 1.5rem;
-                                              line-height: 1.5rem;
-                                          }
-                                          .preview-text div:last-of-type p:first-of-type {
-                                              font-size: 3em;
-                                              line-height: 1em;
-                                              -webkit-text-stroke-width: 3px;
-                                              letter-spacing: 1px;
-                                          }
-                                          .preview-text div:last-of-type p:last-of-type {
-                                              font-size: 0.8em;
-                                              line-height: 0.1em;
-                                          }
-                                          .container1 .card {
-                                              height: fit-content;
-                                              margin-bottom: 100px;
-                                          }
-                                          .container1 .card:first-of-type {
-                                              height: 60vh;
-                                              display: flex;
-                                              justify-content: center;
-                                              align-items: center;
-                                              margin-bottom: 0px;
-                                          }
-                                          .container1 .card .card-content {
-                                              flex-wrap: wrap;
-                                              height: fit-content;
-                                          }
-                                          .photo {
-                                              width: 100%;
-                                              height: 400px;
-                                              background-position-y: 0px;
-                                          }
-                                          .photo:before {
-                                              height: 400px;
-                                              width: 100%;
-                                          }
-                                          .text {
-                                              width: 100%;
-                                          }
-                                          .story p {
-                                              max-height: 100%;
-                                              height: fit-content;
-                                          }
-                                          .zotko {
-                                              background-position-y: -60px;
-                                          }
-                                          .pavlovskiy {
-                                              background-position-y: -100px;
-                                          }
-                                          .galitska {
-                                              background-position-y: -200px;
-                                          }
-                                          .lahmanyuk {
-                                              background-position-x: 0px;
-                                          }
-                                          .klimenko {
-                                              background-position-y: -80px
-                                          }
-                                          .kolesnik {
-                                              background-position-y: -50px;
-                                          }
-                                          .yakovenko {
-                                              background-position-y: -100px;
-                                          }
-                                          .prashur {
-                                              background-position-y: -100px;
-                                          }
-                                          .hello-text {
-                                              font-size: 16px;
-                                          }
-                                          .send-story-block {
-                                              padding: 10px;
-                                              flex-wrap: wrap;
-                                              display: flex;
-                                          }
-                                          .send-story-block div:first-of-type {
-                                              width: 100%;
-                                          }
-                                          .send-story-button {
-                                              width: 100%;
-                                              max-width: 300px;
-                                              margin: 40px 0px;
-                                          }
-                                      }
-                                      
-                                      @media screen and (max-width:400px) {
-                                          .preview-text div:first-of-type p:first-of-type {
-                                              font-size: 3.4rem;
-                                              line-height: 3rem;
-                                          }
-                                          .preview-text div:first-of-type p:last-of-type {
-                                              font-size: 1.25rem;
-                                              line-height: 1.2rem;
-                                          }
-                                          .preview-text div:last-of-type p:first-of-type {
-                                              font-size: 3em;
-                                              line-height: 1em;
-                                              -webkit-text-stroke-width: 3px;
-                                              letter-spacing: 1px;
-                                          }
-                                          .preview-text div:last-of-type p:last-of-type {
-                                              font-size: 0.8em;
-                                              line-height: 0.1em;
-                                          }
-                                          .container1 .card:first-of-type {
-                                              height: 100vh;
-                                              margin-bottom: 0px;
-                                          }
-                                          .text .photo-title p:first-of-type {
-                                              font-size: 26px;
-                                          }
-                                          .text .photo-title p:last-of-type {
-                                              font-size: 18px;
-                                          }
-                                          .lahmanyuk {
-                                              background-position-x: -70px;
-                                          }
-                                          .zotko {
-                                              background-position-y: 0px;
-                                          }
-                                          .fomitskiy {
-                                              background-position-x: 100px;
-                                          }
-                                          .yakovenko {
-                                              background-position-y: -40px;
-                                          }
-                                          .pavlovskiy {
-                                              background-position-y: -40px;
-                                          }
-                                          .galitska {
-                                              background-position-x: -300px;
-                                          }
-                                          .klimenko {
-                                              background-position-y: -20px;
-                                          }
-                                          .prashur {
-                                              background-position-y: -20px;
-                                          }
-                                      }
+                                       
+                                       .preview-text div:first-of-type p:first-of-type {
+                                           font-size: 10rem;
+                                           font-weight: bold;
+                                           line-height: 10.5rem;
+                                           -webkit-text-fill-color: transparent;
+                                           -webkit-text-stroke-color: #00c500e8;
+                                           -webkit-text-stroke-width: 3px;
+                                           margin-block-start: 0em;
+                                           margin-block-end: 0em;
+                                           text-shadow: 5px 5px 0px #36c92e9c;
+                                           transition: all 0.2s ease;
+                                       }
+                                       
+                                       .preview-text div:first-of-type p:last-of-type {
+                                           font-size: 3.7rem;
+                                           font-weight: bold;
+                                           line-height: 3rem;
+                                           margin-block-start: 0em;
+                                           margin-block-end: 0em;
+                                           color: #00c500e8;
+                                           transition: all 0.2s ease;
+                                       }
+                                       
+                                       .preview-text div:last-of-type p:first-of-type {
+                                           font-size: 7em;
+                                           line-height: 1em;
+                                           font-weight: bold;
+                                           margin-block-start: 0.2em;
+                                           margin-block-end: 0em;
+                                           -webkit-text-fill-color: transparent;
+                                           -webkit-text-stroke-color: #00c500e8;
+                                           -webkit-text-stroke-width: 4px;
+                                       }
+                                       
+                                       .preview-text div:last-of-type p:last-of-type {
+                                           font-size: 2em;
+                                           line-height: 1em;
+                                           margin-block-start: 0em;
+                                           margin-block-end: 0em;
+                                           font-weight: bold;
+                                           color: #00c500e8;
+                                       }
+                                       
+                                       .card {
+                                           display: flex;
+                                           justify-content: center;
+                                           align-items: center;
+                                       }
+                                       
+                                       .hello-text {
+                                           width: 70%;
+                                           height: fit-content;
+                                           font-size: 18px;
+                                           padding: 20px;
+                                           background-color: rgba(255, 255, 255, 0.486);
+                                       }
+                                       
+                                       .hello-text span {
+                                           text-decoration: line-through;
+                                       }
+                                       
+                                       .hello-text p:first-child {
+                                           font-size: 28px;
+                                           font-weight: bold;
+                                           /* color: #00c500e8; */
+                                           -webkit-text-fill-color: transparent;
+                                           -webkit-text-stroke-color: #00bf00;
+                                           -webkit-text-stroke-width: 1px;
+                                       }
+                                       
+                                       .send-story-block {
+                                           display: flex;
+                                           align-items: center;
+                                           justify-content: space-around;
+                                           padding: 0px 50px;
+                                       }
+                                       
+                                       .send-story-block div:first-of-type {
+                                           width: 50%;
+                                       }
+                                       
+                                       .send-story-button {
+                                           border: 2px solid #00bf00;
+                                           background-color: transparent;
+                                           box-shadow: 10px 10px 0px #00bf00b2;
+                                           min-width: 240px;
+                                           height: 80px;
+                                           border-radius: 30px;
+                                           box-sizing: border-box;
+                                       }
+                                       
+                                       .send-story-button a {
+                                           width: 100%;
+                                           height: 100%;
+                                           display: flex;
+                                           align-items: center;
+                                           justify-content: center;
+                                           text-decoration: none;
+                                       }
+                                       
+                                       .send-story-button p {
+                                           text-decoration: none;
+                                           font-weight: bold;
+                                           color: #00bf00;
+                                           font-size: 20px;
+                                       }
+                                       
+                                       .send-story-button:hover {
+                                           background-color: #00bf0027;
+                                       }
+                                       
+                                       .send-story-text p:first-of-type {
+                                           font-weight: 600;
+                                           font-size: 18px;
+                                       }
+                                       
+                                       .container1 {
+                                           overflow-y: scroll;
+                                           overflow-x: hidden;
+                                           transform: rotate(270deg) translateX(-100%);
+                                           transform-origin: top left;
+                                           position: absolute;
+                                           width: 100vh;
+                                           height: 100vw;
+                                           display: flex;
+                                           font-family: 'Montserrat', sans-serif;
+                                           animation-name: preview;
+                                           animation-duration: 2s;
+                                           animation-timing-function: ease;
+                                           animation-delay: 0s;
+                                       }
+                                       
+                                       .container2 {
+                                           transform: rotate(90deg) translateY(-100vh);
+                                           transform-origin: top left;
+                                           /* font-size: 0; */
+                                           display: flex;
+                                       }
+                                       
+                                       @media screen and (max-width:1000px) {
+                                           body {
+                                               overflow-y: auto;
+                                               overflow-x: hidden;
+                                           }
+                                           .cursor {
+                                               display: none;
+                                           }
+                                           .container1 {
+                                               overflow-y: auto;
+                                               overflow-x: hidden;
+                                               transform: rotate(0deg) translateX(0%);
+                                               width: 100vw;
+                                               height: auto;
+                                           }
+                                           .container2 {
+                                               transform: rotate(0deg) translateY(0vh);
+                                               flex-wrap: wrap;
+                                           }
+                                           .hello-text {
+                                               width: 90%;
+                                           }
+                                           .preview-text {
+                                               margin: -140px 0 0 -320px;
+                                           }
+                                           .preview-text div:first-of-type p:first-of-type {
+                                               font-size: 7rem;
+                                               line-height: 7rem;
+                                           }
+                                           .preview-text div:first-of-type p:last-of-type {
+                                               font-size: 2.6rem;
+                                               line-height: 2rem;
+                                           }
+                                           .preview-text div:last-of-type p:first-of-type {
+                                               font-size: 5em;
+                                               line-height: 1em;
+                                           }
+                                           .preview-text div:last-of-type p:last-of-type {
+                                               font-size: 1.3em;
+                                               line-height: 0.1em;
+                                           }
+                                           .container1 .card {
+                                               display: flex;
+                                               justify-content: center;
+                                               align-items: center;
+                                           }
+                                           .container1 .card .card-content {
+                                               position: static;
+                                               margin: 0;
+                                               width: 90%;
+                                           }
+                                           .photo {
+                                               background-repeat: no-repeat;
+                                           }
+                                           .zotko {
+                                               background-position-y: 0px;
+                                           }
+                                           .trofimenko {
+                                               background-position-y: 0px;
+                                           }
+                                           .text .photo-title p:first-of-type {
+                                               font-size: 30px;
+                                           }
+                                           .text .photo-title p:last-of-type {
+                                               font-size: 20px;
+                                           }
+                                           .story {
+                                               margin-top: 20px;
+                                           }
+                                           .story p {
+                                               font-size: 14px;
+                                               line-height: 20px;
+                                           }
+                                       }
+                                       
+                                       @media screen and (max-width:700px) {
+                                           .preview-text {
+                                               margin: 0px;
+                                               position: static;
+                                           }
+                                           .preview-text div:first-of-type p:first-of-type {
+                                               font-size: 4rem;
+                                               line-height: 4rem;
+                                               text-shadow: 3px 3px 0px #36c92e9c;
+                                           }
+                                           .preview-text div:first-of-type p:last-of-type {
+                                               font-size: 1.5rem;
+                                               line-height: 1.5rem;
+                                           }
+                                           .preview-text div:last-of-type p:first-of-type {
+                                               font-size: 3em;
+                                               line-height: 1em;
+                                               -webkit-text-stroke-width: 3px;
+                                               letter-spacing: 1px;
+                                           }
+                                           .preview-text div:last-of-type p:last-of-type {
+                                               font-size: 0.8em;
+                                               line-height: 0.1em;
+                                           }
+                                           .container1 .card {
+                                               height: fit-content;
+                                               margin-bottom: 100px;
+                                           }
+                                           .container1 .card:first-of-type {
+                                               height: 60vh;
+                                               display: flex;
+                                               justify-content: center;
+                                               align-items: center;
+                                               margin-bottom: 0px;
+                                           }
+                                           .container1 .card .card-content {
+                                               flex-wrap: wrap;
+                                               height: fit-content;
+                                           }
+                                           .photo {
+                                               width: 100%;
+                                               height: 400px;
+                                               background-position-y: 0px;
+                                           }
+                                           .photo:before {
+                                               height: 400px;
+                                               width: 100%;
+                                           }
+                                           .text {
+                                               width: 100%;
+                                           }
+                                           .story p {
+                                               max-height: 100%;
+                                               height: fit-content;
+                                           }
+                                           .zotko {
+                                               background-position-y: -60px;
+                                           }
+                                           .pavlovskiy {
+                                               background-position-y: -100px;
+                                           }
+                                           .galitska {
+                                               background-position-y: -200px;
+                                           }
+                                           .lahmanyuk {
+                                               background-position-x: 0px;
+                                           }
+                                           .klimenko {
+                                               background-position-y: -80px
+                                           }
+                                           .kolesnik {
+                                               background-position-y: -50px;
+                                           }
+                                           .yakovenko {
+                                               background-position-y: -100px;
+                                           }
+                                           .prashur {
+                                               background-position-y: -100px;
+                                           }
+                                           .hello-text {
+                                               font-size: 16px;
+                                           }
+                                           .send-story-block {
+                                               padding: 10px;
+                                               flex-wrap: wrap;
+                                               display: flex;
+                                           }
+                                           .send-story-block div:first-of-type {
+                                               width: 100%;
+                                           }
+                                           .send-story-button {
+                                               width: 100%;
+                                               max-width: 300px;
+                                               margin: 40px 0px;
+                                           }
+                                       }
+                                       
+                                       @media screen and (max-width:400px) {
+                                           .preview-text div:first-of-type p:first-of-type {
+                                               font-size: 3.4rem;
+                                               line-height: 3rem;
+                                           }
+                                           .preview-text div:first-of-type p:last-of-type {
+                                               font-size: 1.25rem;
+                                               line-height: 1.2rem;
+                                           }
+                                           .preview-text div:last-of-type p:first-of-type {
+                                               font-size: 3em;
+                                               line-height: 1em;
+                                               -webkit-text-stroke-width: 3px;
+                                               letter-spacing: 1px;
+                                           }
+                                           .preview-text div:last-of-type p:last-of-type {
+                                               font-size: 0.8em;
+                                               line-height: 0.1em;
+                                           }
+                                           .container1 .card:first-of-type {
+                                               height: 100vh;
+                                               margin-bottom: 0px;
+                                           }
+                                           .text .photo-title p:first-of-type {
+                                               font-size: 26px;
+                                           }
+                                           .text .photo-title p:last-of-type {
+                                               font-size: 18px;
+                                           }
+                                           .lahmanyuk {
+                                               background-position-x: -70px;
+                                           }
+                                           .zotko {
+                                               background-position-y: 0px;
+                                           }
+                                           .fomitskiy {
+                                               background-position-x: 150px;
+                                           }
+                                           .yakovenko {
+                                               background-position-y: -40px;
+                                           }
+                                           .pavlovskiy {
+                                               background-position-y: -40px;
+                                           }
+                                           .galitska {
+                                               background-position-x: -300px;
+                                           }
+                                           .klimenko {
+                                               background-position-y: -20px;
+                                           }
+                                           .prashur {
+                                               background-position-y: -20px;
+                                           }
+                                       }
